@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/species_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textStyle="bold"
+            tools:text="Wookie" />
+
+        <TextView
+            android:id="@+id/species_designation_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/species_name_text_view"
+            app:layout_constraintTop_toBottomOf="@id/species_name_text_view"
+            tools:text="Designation: Sentient" />
+
+        <TextView
+            android:id="@+id/species_language_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/species_designation_text_view"
+            app:layout_constraintTop_toTopOf="@id/species_designation_text_view"
+            app:layout_constraintBottom_toBottomOf="@id/species_designation_text_view"
+            android:layout_marginStart="16dp"
+            tools:text="Language: Shyriiwook" />
+
+        <TextView
+            android:id="@+id/species_homeworld_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/species_designation_text_view"
+            app:layout_constraintStart_toStartOf="@id/species_designation_text_view"
+            tools:text="Homeworld: Kasyyk" />
+
+        <TextView
+            android:id="@+id/species_average_lifespan_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/species_homeworld_text_view"
+            app:layout_constraintTop_toTopOf="@id/species_homeworld_text_view"
+            app:layout_constraintBottom_toBottomOf="@id/species_homeworld_text_view"
+            android:layout_marginStart="16dp"
+            tools:text="Avg. Lifespan: 400 years" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Star Wars App</string>
+    <string name="bot_nav_bar_item_title_characters">Characters</string>
+    <string name="bot_nav_bar_item_title_species">Species</string>
+    <string name="bot_nav_bar_item_title_planets">Planets</string>
+
+    <!-- Planet CardView Fields -->
+    <string name="planet_terrain_text">Terrain: %s</string>
+    <string name="planet_surface_water_text">Surface Water: %s</string>
+    <string name="planet_climate_text">Climate: %s</string>
+    <string name="planet_gravity_text">Gravity: %s</string>
+    <string name="planet_population_text">Population: %s</string>
+
+    <!-- Character CardView Fields -->
+    <string name="character_species_text">Species: %s</string>
+    <string name="character_birth_year_text">Birth Year: %s</string>
+    <string name="character_gender_text">Gender: %s</string>
+    <string name="character_home_world_text">Home World: %s</string>
+
+    <!-- Species CardView Fields -->
+    <string name="species_designation_text">Designation: %s</string>
+    <string name="species_language_text">Language: %s</string>
+    <string name="species_home_world_text">Home World: %s</string>
+    <string name="species_average_lifespan">Avg. Lifespan: %s</string>
+</resources>

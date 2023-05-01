@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/charactersFragment"
+        android:icon="@drawable/icon_characters"
+        android:title="@string/bot_nav_bar_item_title_characters" />
+
+    <item
+        android:id="@+id/speciesFragment"
+        android:icon="@drawable/icon_species"
+        android:title="@string/bot_nav_bar_item_title_species" />
+
+    <item
+        android:id="@+id/planetsFragment"
+        android:icon="@drawable/icon_planets"
+        android:title="@string/bot_nav_bar_item_title_planets" />
+
+</menu>

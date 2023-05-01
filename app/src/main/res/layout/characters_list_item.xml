@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="12dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/character_name_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Anakin Skywalker" />
+
+        <TextView
+            android:id="@+id/character_species_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/character_name_text_view"
+            app:layout_constraintTop_toBottomOf="@id/character_name_text_view"
+            tools:text="Species: Human" />
+
+        <TextView
+            android:id="@+id/character_birth_year_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/character_species_text_view"
+            app:layout_constraintStart_toEndOf="@id/character_species_text_view"
+            app:layout_constraintTop_toTopOf="@id/character_species_text_view"
+            tools:text="Birth Year: 56 BBY" />
+
+        <TextView
+            android:id="@+id/character_gender_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/character_species_text_view"
+            app:layout_constraintTop_toBottomOf="@id/character_species_text_view"
+            tools:text="Gender: Male" />
+
+        <TextView
+            android:id="@+id/character_home_world_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/character_gender_text_view"
+            app:layout_constraintStart_toEndOf="@id/character_gender_text_view"
+            app:layout_constraintTop_toTopOf="@id/character_gender_text_view"
+            tools:text="Home World: Tatooine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
